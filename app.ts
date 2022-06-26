@@ -57,18 +57,13 @@ console.log(text);
 
 import Todo from "Todo";
 import Metadata from "Metadata";
-import {v4} from 'uuid';
+import TodoList from "TodoList";
 
 
-const todo: Todo<Metadata> = {
-    id: v4(),
-    description: 'TypeScript lernen',
-    status: 'open',
-    data: {
-        assignee: 'Farxa'
-    }
-};
+const todoList = new TodoList<Metadata>();
+
+todoList.note('Code aufräumen', {assignee: '@farxa'})
 
 
-
+// 1:05:08 Klassen und objektorientierte Programmierung
 
